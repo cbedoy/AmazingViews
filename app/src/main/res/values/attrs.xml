@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MainMenuItem">
+        <attr name="mainMenuItemTitle" format="string" localization="suggested" />
+        <attr name="mainMenuItemIcon" format="reference" />
+        <attr name="mainMenuItemIconAlpha" format="float" />
+    </declare-styleable>
+    
+    <declare-styleable name="MainCategoryItem">
+        <attr name="categoryItemTitle" format="string" localization="suggested" />
+        <attr name="categoryItemPrice" format="string" localization="suggested" />
+        <attr name="categoryItemIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

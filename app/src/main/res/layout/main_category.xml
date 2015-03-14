@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_main_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_grey"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+
+        <cbedoy.amazingviews.gui.view.custom.ImageViewExpandedHit
+            android:id="@+id/img_main_category_navigation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/ico_home" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_main_category_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mock1"
+        android:padding="8dp" >
+
+        <GridView
+            android:id="@+id/grid_main_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="8dp" />
+
+        <LinearLayout
+            android:id="@+id/container_main_category_item_showed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <cbedoy.amazingviews.gui.view.custom.SquareImageView
+                android:id="@+id/img_main_category_item_showed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico_shirt" 
+                android:scaleType="centerInside"
+                android:background="@android:color/white"
+                android:padding="8dp">
+            </cbedoy.amazingviews.gui.view.custom.SquareImageView>
+
+            <TextView
+                android:id="@+id/txt_main_category_item_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="TITLE"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_main_category_item_price"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="PRICE"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_main_category_item_purchase"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/category_shirts"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="PURCHASE"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
